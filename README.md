@@ -61,7 +61,6 @@ The small subset of tests was included to test parts of the functionalities
 ./gradlew test
 
 > Task :test
-Picked up JAVA_TOOL_OPTIONS:  -Dfile.encoding=UTF8
 
 com.nr.challenge.ParserTest > TestFileParserInvalidFile PASSED
 
