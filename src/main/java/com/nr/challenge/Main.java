@@ -19,12 +19,12 @@ public class Main {
 		AbstractParser parser; 
 		
 		if (args.length > 0) {
-			System.out.println("The count will be done over the files provided");
+			System.out.println("The count will be done over the files provided: \n");
 			parser = new FileParser(sequenceQueue, args);
 			
 		}
 		else {
-			System.out.println("The count will be done over the stdin input");
+			System.out.println("The count will be done over the STDIN input: \n");
 			parser = new StdinParser(sequenceQueue);
 		}
 		
@@ -47,7 +47,8 @@ public class Main {
 
 	
 	
-	//This is starting a thread that will be listing into the queue where the 3 sequence words are being inserted. 
+	/*This is starting a thread that will be listening into the queue where the 3 sequence words are being inserted.
+	It will check each sequence and add to a hashmap accordingly*/
 	private void startProcessWords(ArrayBlockingQueue<String> queue) {
 		
 		try {
