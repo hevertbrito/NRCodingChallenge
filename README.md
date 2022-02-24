@@ -4,6 +4,7 @@ Solution
 
 ## Assumptions ##
 - The text or file provided won't have words that will be followed by_ (bug on the reguler expression)
+- Considering the following the chars as being used by contractions ( '’‘ ) 
 
 ## Build
 
