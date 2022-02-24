@@ -80,5 +80,5 @@ BUILD SUCCESSFUL in 2s
 - BUG -> Regular expression could be tuned to handle all special chars. (related to words that start or end with _)
 - BUG -> There is no continuity when there is more than 1 file passed as arguments. So in this scenario, it is not considering the last sequences of words when a file ends and another starts (it is working as expected when the input comes from stdin)
 - Performance could have been improved.
-- There could be more unit tests.  
+- There could be more unit tests (including one to validate unicode chars).  
 
