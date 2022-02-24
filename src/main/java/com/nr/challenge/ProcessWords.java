@@ -37,15 +37,13 @@ public class ProcessWords {
         		 String sequenceOfWords =  queue.poll();        		 
         		 // If a sequence of 3 words already exist in HashMap then increase it's count by 1
                  if(sequenceOfWords != null) {
-                	 //System.out.println( "Reading this string from the queue " + sequenceOfWords);
                 	 if (hs.containsKey(sequenceOfWords)) {          
                          hs.put(sequenceOfWords, hs.get(sequenceOfWords) + 1);
                      }
                      // Otherwise the new sequence to HashMap
                      else {
                          hs.put(sequenceOfWords, 1);     
-                     }      
-                	 //System.out.printf(" Key %s \t Value %d\n", sequenceOfWords, hs.get(sequenceOfWords));
+                     }                 
                  }
         		 
         	 }       	 

@@ -38,7 +38,6 @@ public class AbstractParser {
 	    	finalString.add(match.toLowerCase());
 	    }
 	    
-	    //System.out.println(finalString.toString());
     	return finalString;
 		
 	}
@@ -58,7 +57,7 @@ public class AbstractParser {
 		
 	}
 	
-	
+	//It will read each line of the input (file or SDTIN) parse/trim and insert in a queue
 	protected void readLine(BufferedReader bufReader) {
 		List<String> trimmedString;
 		String inputStr = "";
