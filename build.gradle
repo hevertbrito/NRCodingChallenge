@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+    }
+}
+
+plugins {
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+    id 'java'
+}
+
+group 'com.nr.challenge'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.23.4'
+}
+
+jar {
+    manifest {
+        attributes (
+            'Description': 'New Relic challenge JAR',
+            'Main-Class': 'com.nr.challenge.Main'
+        )
+    }
+
+}
+
+shadowJar {
+    archiveBaseName.set('NRchallenge')
+    archiveClassifier.set('')
+    archiveVersion.set('')
+    manifest {
+        inheritFrom project.tasks.jar.manifest
+    }
+}
+
+test {
+    testLogging {
+        events "PASSED", "SKIPPED", "FAILED"
+    }
+}
