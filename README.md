@@ -57,7 +57,7 @@ the white whale - 75
 
 The small subset of tests was included to test parts of the functionalities
 
-``
+```
 ./gradlew test
 
 > Task :test
