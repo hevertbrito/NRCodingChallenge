@@ -46,11 +46,11 @@ cat moby_dick.txt | java -jar ./build/libs/NRchallenge.jar
 
 ```
 The count will be done over the stdin input
-of the whale - 91
+of the whale - 93
 
-the sperm whale - 86
+the sperm whale - 89
 
-the white whale - 75
+the white whale - 76
 ```
 
 #Run Tests
